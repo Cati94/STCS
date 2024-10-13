@@ -1,0 +1,55 @@
+_____________ Esquema ________________________________
+
+imput 
+Pipe .... 
+ valtemp1;valtemp2;valtemp3;valtemp4
+Fuction status{
+if valtemp1 >= setpoint status off 
+else valtemp1 setpoint status on
+}
+
+Fuction status{
+if valtemp2 >= setpoint status off 
+else valtemp2 setpoint status on
+}
+Fuction status{
+if valtemp3 >= setpoint status off 
+else valtemp3 setpoint status on
+}
+
+Fuction status{
+if valtemp4 >= setpoint status off 
+else valtemp4 setpoint status on
+}
+-----------
+Fuction why{
+if valtemp1 > setpoint why sunny exposition
+if  valtemp1 = setpoint why normal
+else valtemp1< setpoint why eclipse
+}
+Fuction why{
+if valtemp2 > setpoint why sunny exposition
+if  valtemp2 = setpoint why normal
+else valtemp2< setpoint why eclipse
+}
+Fuction why{
+if valtemp3 > setpoint why sunny exposition
+if  valtemp3 = setpoint why normal
+else valtemp3 < setpoint why eclipse
+}
+
+Fuction why{
+if valtemp4 > setpoint why sunny exposition
+if  valtemp4 = setpoint why normal
+else valtemp4 < setpoint why eclipse
+}
+output 
+Pipe............
+print: 
+valtemp1;status;why
+valtemp2;status;why
+valtemp3;status;why
+valtemp4;status;why
+
+Criar função para que leia, a partir do pipe, o valor da temperatura de um sensor.
+_________________________________________________________________________
